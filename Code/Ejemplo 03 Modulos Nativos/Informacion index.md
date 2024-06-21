@@ -74,4 +74,4 @@ console.log("Tiempo de actividad del sistema:", (os.uptime() / 3600).toFixed(2),
 - **Megabytes a Gigabytes (GB):** *Dividiendo nuevamente por `1024`.*
 - **Gigabytes a Terabytes (TB):** *Dividiendo nuevamente por `1024`.*
 
-- *Esta conversión se basa en el principio de que cada unidad es `1024` veces mayor que la unidad anterior en términos de bytes. Esto es útil para manejar tamaños de archivos, uso de memoria y otros datos relacionados con la capacidad de almacenamiento en el sistema operativo.*
+- *Esta conversión se basa en el principio de que cada unidad es `1024` veces mayor que la unidad anterior en términos de bytes. Esto es útil para manejar tamaños de ficheros, uso de memoria y otros datos relacionados con la capacidad de almacenamiento en el sistema operativo.*

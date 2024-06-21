@@ -4,7 +4,7 @@
 
 # ***Node.js REPL: ¿Qué es y Cómo Funciona?***
 
-- *Cuando ejecutas el comando `node` en la terminal sin ningún argumento adicional, estás entrando en un entorno interactivo conocido como REPL. REPL es un acrónimo que significa **Read-Eval-Print Loop**. Es una herramienta poderosa para probar código JavaScript en tiempo real, y es muy útil para desarrolladores que quieren experimentar o depurar rápidamente sin necesidad de crear archivos separados.*
+- *Cuando ejecutas el comando `node` en la terminal sin ningún argumento adicional, estás entrando en un entorno interactivo conocido como REPL. REPL es un acrónimo que significa **Read-Eval-Print Loop**. Es una herramienta poderosa para probar código JavaScript en tiempo real, y es muy útil para desarrolladores que quieren experimentar o depurar rápidamente sin necesidad de crear ficheros separados.*
 
 ## ***Componentes del REPL***
 
@@ -61,8 +61,8 @@ undefined
 - **.break / .clear:** *Salir del bucle actual o limpiar la entrada.*
 - **.editor:** *Entra en modo editor para escribir múltiples líneas de código.*
 - **.exit:** *Salir del REPL.*
-- **.load [filename]:** *Cargar un archivo JavaScript en la sesión del REPL.*
-- **.save [filename]:** *Guardar todos los comandos evaluados en la sesión del REPL a un archivo.*
+- **.load [filename]:** *Cargar un fichero JavaScript en la sesión del REPL.*
+- **.save [filename]:** *Guardar todos los comandos evaluados en la sesión del REPL a un fichero.*
 
 ### ***Ejemplos de Uso***
 
