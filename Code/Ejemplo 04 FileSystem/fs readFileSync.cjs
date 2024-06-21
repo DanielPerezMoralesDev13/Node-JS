@@ -2,7 +2,7 @@
 // GitHub: https://github.com/DanielPerezMoralesDev13
 // Correo electrónico: danielperezdev@proton.me
 
-// Importación del módulo 'fs' para operaciones de sistema de archivos
+// Importación del módulo 'fs' para operaciones de sistema de ficheros
 const fs = require('node:fs');
 
 // Lectura sincrónica del primer fichero './fichero.txt'

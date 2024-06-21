@@ -1,4 +1,4 @@
-# *Cómo convertir las funciones de callback de Node.js a funciones que devuelven promesas usando `util.promisify`, y cómo usar esas promesas para realizar operaciones asíncronas de lectura de archivos:*
+# *Cómo convertir las funciones de callback de Node.js a funciones que devuelven promesas usando `util.promisify`, y cómo usar esas promesas para realizar operaciones asíncronas de lectura de ficheros:*
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
@@ -8,7 +8,7 @@
 // Esto sólo en los módulos nativos
 // que no tienen promesas nativas
 
-// Importación del módulo 'fs' para operaciones de sistema de archivos
+// Importación del módulo 'fs' para operaciones de sistema de ficheros
 const fs = require('node:fs');
 
 // Importación del módulo 'util' para promisificar funciones
@@ -81,10 +81,10 @@ Primer texto: Hola Mundo
    - **`const readFilePromise = promisify(fs.readFile);`:** *Usa `promisify` para convertir la función de callback `fs.readFile` en una función que devuelve una promesa, llamada `readFilePromise`.*
 
 3. **Uso de Promesas en Lugar de Callbacks:**
-   - **`readFilePromise('./fichero.txt', 'utf-8').then((text) => { ... })`:** *Utiliza `readFilePromise` para leer el contenido del archivo `./fichero.txt`. La promesa se resuelve con el texto del archivo, que se maneja dentro del `.then()`.*
+   - **`readFilePromise('./fichero.txt', 'utf-8').then((text) => { ... })`:** *Utiliza `readFilePromise` para leer el contenido del fichero `./fichero.txt`. La promesa se resuelve con el texto del fichero, que se maneja dentro del `.then()`.*
 
 4. **Manejo de Errores con `.catch()`:**
-   - **`.catch((err) => { ... })`:** *Maneja cualquier error que ocurra durante la lectura del archivo utilizando `.catch()` después de `.then()` para capturar y manejar errores de manera efectiva.*
+   - **`.catch((err) => { ... })`:** *Maneja cualquier error que ocurra durante la lectura del fichero utilizando `.catch()` después de `.then()` para capturar y manejar errores de manera efectiva.*
 
 5. **Ejecución No Determinística:**
    - **Comentario:** *`Lo bueno de esto es que no sabes qué tarea terminará primero.`. Este comentario resalta que las operaciones asíncronas pueden completarse en cualquier orden, lo que es beneficioso para la eficiencia y paralelización en aplicaciones Node.js.*

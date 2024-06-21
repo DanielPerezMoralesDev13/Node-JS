@@ -5,7 +5,7 @@
 // Esto sólo en los módulos nativos
 // que no tienen promesas nativas
 
-// Importación del módulo 'fs' para operaciones de sistema de archivos
+// Importación del módulo 'fs' para operaciones de sistema de ficheros
 const fs = require('node:fs');
 
 // Importación del módulo 'util' para promisificar funciones

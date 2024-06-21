@@ -11,22 +11,22 @@
 
 // Asyncrono vs Syncrono en Node.js
 
-// Importación del módulo 'fs' para operaciones de sistema de archivos
+// Importación del módulo 'fs' para operaciones de sistema de ficheros
 const fs = require('node:fs'); // Se recomienda 'node:' antes del módulo nativo a partir de Node.js 16
 
-// Operación sincrónica para obtener estadísticas del archivo './fichero.txt'
+// Operación sincrónica para obtener estadísticas del fichero './fichero.txt'
 const statsSync = fs.statSync('./fichero.txt');
 
 // Imprimir las estadísticas obtenidas de manera sincrónica
 console.log('Operación sincrónica:');
 console.log(
-    statsSync.isFile(),         // Verifica si 'fichero.txt' es un archivo
+    statsSync.isFile(),         // Verifica si 'fichero.txt' es un fichero
     statsSync.isDirectory(),    // Verifica si 'fichero.txt' es un directorio
     statsSync.isSymbolicLink(), // Verifica si 'fichero.txt' es un enlace simbólico
     statsSync.size              // Muestra el tamaño en bytes de 'fichero.txt'
 );
 
-// Operación asíncrona para obtener estadísticas del archivo './fichero.txt'
+// Operación asíncrona para obtener estadísticas del fichero './fichero.txt'
 fs.stat('./fichero.txt', (err, statsAsync) => {
     if (err) {
         console.error('Error al obtener estadísticas asíncronas:', err);
@@ -36,7 +36,7 @@ fs.stat('./fichero.txt', (err, statsAsync) => {
     // Imprimir las estadísticas obtenidas de manera asíncrona
     console.log('\nOperación asíncrona:');
     console.log(
-        statsAsync.isFile(),         // Verifica si 'fichero.txt' es un archivo
+        statsAsync.isFile(),         // Verifica si 'fichero.txt' es un fichero
         statsAsync.isDirectory(),    // Verifica si 'fichero.txt' es un directorio
         statsAsync.isSymbolicLink(), // Verifica si 'fichero.txt' es un enlace simbólico
         statsAsync.size              // Muestra el tamaño en bytes de 'fichero.txt'
@@ -48,17 +48,17 @@ fs.stat('./fichero.txt', (err, statsAsync) => {
 ## ***Explicación y Comentarios***
 
 1. **Uso de `require('node:fs')`:**
-   - **`const fs = require('node:fs');`:** *Importa el módulo `'fs'` de Node.js para realizar operaciones de sistema de archivos. A partir de Node.js 16, se recomienda usar `'node:'` antes del nombre del módulo.*
+   - **`const fs = require('node:fs');`:** *Importa el módulo `'fs'` de Node.js para realizar operaciones de sistema de ficheros. A partir de Node.js 16, se recomienda usar `'node:'` antes del nombre del módulo.*
 
 2. **Operación Sincrónica (`fs.statSync()`):**
-   - **`const statsSync = fs.statSync('./fichero.txt');`:** *`fs.statSync()` es una operación sincrónica que bloquea la ejecución del código hasta que se completan todas las operaciones de lectura de archivos. Devuelve un objeto `fs.Stats` con información del archivo especificado.*
+   - **`const statsSync = fs.statSync('./fichero.txt');`:** *`fs.statSync()` es una operación sincrónica que bloquea la ejecución del código hasta que se completan todas las operaciones de lectura de ficheros. Devuelve un objeto `fs.Stats` con información del fichero especificado.*
 
 3. **Operación Asíncrona (`fs.stat()`):**
-   - **`fs.stat('./fichero.txt', (err, statsAsync) => { ... });`:** *`fs.stat()` es una operación asíncrona que toma un callback como argumento. Este callback se ejecutará cuando se complete la operación de lectura de archivos. Si hay un error, se maneja en el parámetro `err`, y los datos de estadísticas se pasan en `statsAsync`.*
+   - **`fs.stat('./fichero.txt', (err, statsAsync) => { ... });`:** *`fs.stat()` es una operación asíncrona que toma un callback como argumento. Este callback se ejecutará cuando se complete la operación de lectura de ficheros. Si hay un error, se maneja en el parámetro `err`, y los datos de estadísticas se pasan en `statsAsync`.*
 
 4. **Diferencias entre Operaciones Sincrónicas y Asíncronas:**
    - **Sincrónico:** *Bloquea la ejecución del código hasta que se complete la operación. Es útil para obtener resultados de manera inmediata y secuencial, pero puede hacer que la aplicación parezca lenta o no responsive si se usan en exceso.*
-   - **Asíncrono:** *Permite que otras operaciones continúen mientras se realizan las tareas de lectura o escritura de archivos. Mejora la capacidad de respuesta y la eficiencia, especialmente en aplicaciones que deben manejar múltiples solicitudes simultáneamente.*
+   - **Asíncrono:** *Permite que otras operaciones continúen mientras se realizan las tareas de lectura o escritura de ficheros. Mejora la capacidad de respuesta y la eficiencia, especialmente en aplicaciones que deben manejar múltiples solicitudes simultáneamente.*
 
 5. **Ventajas y Desventajas:**
    - **Sincrónico:**
