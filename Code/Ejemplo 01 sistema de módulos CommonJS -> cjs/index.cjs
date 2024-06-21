@@ -8,6 +8,7 @@
 // Importación de funciones desde el módulo 'module.cjs'.
 // La variable que contiene las funciones importadas puede tener cualquier nombre, 
 // pero es recomendable utilizar un nombre descriptivo relacionado con el módulo.
+
 const { suma, restar, multiplicacion } = require('./module.cjs');
 
 // Uso de las funciones importadas

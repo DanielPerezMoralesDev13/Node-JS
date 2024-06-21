@@ -7,6 +7,7 @@
 
 // Importación de funciones desde el módulo 'module.mjs'.
 // Utilizamos la sintaxis de importación de ESM para traer las funciones necesarias.
+
 import { multiplicacion, restar, suma } from './module.mjs';
 
 // Uso de las funciones importadas
