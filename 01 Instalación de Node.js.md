@@ -20,6 +20,20 @@
    sudo apt install -y nodejs
    ```
 
+   ```bash
+   # installs nvm (Node Version Manager)
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+   # download and install Node.js (you may need to restart the terminal)
+   nvm install 20
+
+   # verifies the right Node.js version is in the environment
+   node -v # should print `v20.15.0`
+
+   # verifies the right NPM version is in the environment
+   npm -v # should print `10.7.0`
+   ```
+
    *Este método instala la versión `LTS (Long Term Support)` más reciente de Node.js disponible en NodeSource para tu distribución de Ubuntu.*
 
 2. **Verificar la instalación:**
@@ -40,9 +54,9 @@
 
 **Node Version Manager (NVM)** *es una herramienta para gestionar múltiples versiones de Node.js y npm. Permite instalar versiones específicas de Node.js y cambiar entre ellas según sea necesario.*
 
-- **Enlace:** [NVM GitHub](https://github.com/nvm-sh/nvm "https://github.com/nvm-sh/nvm")
+- **Enlace:** *[NVM GitHub](https://github.com/nvm-sh/nvm "https://github.com/nvm-sh/nvm")*
 - **Instalación:**
-  Para instalar NVM, puedes usar el script de instalación automática proporcionado en el repositorio de GitHub:
+  **Para instalar NVM, puedes usar el script de instalación automática proporcionado en el repositorio de GitHub:**
 
   ```bash
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash

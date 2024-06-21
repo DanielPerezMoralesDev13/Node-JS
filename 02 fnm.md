@@ -108,3 +108,19 @@ fnm --help
 - *Esto te proporcionará información detallada sobre cómo usar `fnm` y sus diferentes subcomandos.*
 
 - *Estos ejemplos te dan una idea de cómo puedes utilizar `fnm` para gestionar fácilmente las versiones de Node.js en tu sistema. Cada comando te proporciona flexibilidad para trabajar con múltiples versiones y administrarlas según las necesidades de tu proyecto.*
+
+```bash
+fnm install 20.15.0
+Installing Node v20.15.0 (x64)
+00:00:05 ███████████████████████████████████████████████████████████████████████████ 24.43 MiB/24.43 MiB (4.66 MiB/s, 0s)
+```
+
+```bash
+fnm alias 20.15.0 default
+```
+
+```bash
+fnm list
+* v20.15.0 default
+* system
+```
