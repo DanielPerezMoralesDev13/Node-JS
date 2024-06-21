@@ -101,9 +101,9 @@
 
 ## ***Contact***
 
-**Author:** *Daniel Benjamin Perez Morales*
-**GitHub:** *[DanielPerezMoralesDev13](https://github.com/DanielPerezMoralesDev13)*
-**Email:** *`danielperezdev@proton.me`*
+- **Author:** *Daniel Benjamin Perez Morales*
+- **GitHub:** *[DanielPerezMoralesDev13](https://github.com/DanielPerezMoralesDev13)*
+- **Email:** *`danielperezdev@proton.me`*
 
 ## ***Contributions***
 
