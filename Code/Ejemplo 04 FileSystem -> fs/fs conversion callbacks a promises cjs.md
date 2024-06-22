@@ -1,3 +1,7 @@
+<!-- Autor: Daniel Benjamin Perez Morales -->
+<!-- GitHub: https://github.com/DanielPerezMoralesDev13 -->
+<!-- Correo electrónico: danielperezdev@proton.me -->
+
 # *Cómo convertir las funciones de callback de Node.js a funciones que devuelven promesas usando `util.promisify`, y cómo usar esas promesas para realizar operaciones asíncronas de lectura de ficheros:*
 
 ```javascript
