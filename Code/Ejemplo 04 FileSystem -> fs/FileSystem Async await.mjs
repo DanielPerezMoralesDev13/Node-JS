@@ -31,7 +31,7 @@ console.log('segundo texto:', text);
 */
 
 // En módulos ECMAScript (ESM), el uso de async/await es completamente soportado.
-// Importamos la función readFile del módulo 'fs/promises' para manejar operaciones de archivos de manera asincrónica.
+// Importamos la función readFile del módulo 'fs/promises' para manejar operaciones de ficheros de manera asincrónica.
 
 import { readFile } from 'node:fs/promises';
 
@@ -50,8 +50,8 @@ Comentarios adicionales:
 1. El uso de `await` permite que el código se detenga en esa línea hasta que la promesa se resuelva, 
    haciendo que el código se ejecute de manera secuencial en lugar de paralela.
 
-2. Esto es útil para leer archivos en un orden específico sin bloquear el hilo principal, 
-   permitiendo que otras operaciones se ejecuten mientras se espera la lectura de los archivos.
+2. Esto es útil para leer ficheros en un orden específico sin bloquear el hilo principal, 
+   permitiendo que otras operaciones se ejecuten mientras se espera la lectura de los ficheros.
 
 3. Es importante recordar que el uso de `await` sólo es válido dentro de funciones `async` o en 
    módulos ECMAScript (ESM) directamente.
