@@ -6,37 +6,37 @@
 // que no tienen promesas nativas
 
 // Importación del módulo 'fs' para operaciones de sistema de ficheros
-const fs = require('node:fs');
+const fs = require('node:fs')
 
 // Importación del módulo 'util' para promisificar funciones
-const { promisify } = require('node:util');
+const { promisify } = require('node:util')
 
 // Promisificar la función fs.readFile
-const readFilePromise = promisify(fs.readFile);
+const readFilePromise = promisify(fs.readFile)
 
-console.log('Leyendo el primer fichero...');
+console.log('Leyendo el primer fichero...')
 
 // Utilizando la función promisificada para leer el primer fichero './fichero.txt'
 readFilePromise('./fichero.txt', 'utf-8')
-    .then((text) => {
-        console.log('Primer texto:', text);
-    })
-    .catch((err) => {
-        console.error('Error al leer el primer fichero:', err);
-    });
+  .then((text) => {
+    console.log('Primer texto:', text)
+  })
+  .catch((err) => {
+    console.error('Error al leer el primer fichero:', err)
+  })
 
-console.log('--> Haciendo cosas mientras lee el fichero...');
+console.log('--> Haciendo cosas mientras lee el fichero...')
 
-console.log('Leyendo el segundo fichero...');
+console.log('Leyendo el segundo fichero...')
 
 // Utilizando la función promisificada para leer el segundo fichero './fichero2.txt'
 readFilePromise('./fichero2.txt', 'utf-8')
-    .then((text) => {
-        console.log('Segundo texto:', text);
-    })
-    .catch((err) => {
-        console.error('Error al leer el segundo fichero:', err);
-    });
+  .then((text) => {
+    console.log('Segundo texto:', text)
+  })
+  .catch((err) => {
+    console.error('Error al leer el segundo fichero:', err)
+  })
 
 /*
 Lo bueno de esto es que no sabes qué tarea terminará primero.

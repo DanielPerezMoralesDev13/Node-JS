@@ -3,36 +3,36 @@
 // Correo electrónico: danielperezdev@proton.me
 
 // Importación del módulo 'fs' para operaciones de sistema de ficheros
-const fs = require('node:fs');
+const fs = require('node:fs')
 
-console.log('Leyendo el primer fichero...');
+console.log('Leyendo el primer fichero...')
 
 // Operación asíncrona para leer el contenido del primer fichero './fichero.txt'
 fs.readFile('./fichero.txt', 'utf-8', (err, text) => {
-    // Callback: una función que se ejecuta después de que se completa una tarea asíncrona
-    // 'err' es el posible error que ocurrió durante la operación
-    // 'text' es el contenido del fichero leído, en formato UTF-8
-    if (err) {
-        console.error('Error al leer el primer fichero:', err);
-        return;
-    }
-    console.log('Primer texto:', text);
-});
+  // Callback: una función que se ejecuta después de que se completa una tarea asíncrona
+  // 'err' es el posible error que ocurrió durante la operación
+  // 'text' es el contenido del fichero leído, en formato UTF-8
+  if (err) {
+    console.error('Error al leer el primer fichero:', err)
+    return
+  }
+  console.log('Primer texto:', text)
+})
 
-console.log('--> Haciendo cosas mientras lee el fichero...');
+console.log('--> Haciendo cosas mientras lee el fichero...')
 
-console.log('Leyendo el segundo fichero...');
+console.log('Leyendo el segundo fichero...')
 // Operación asíncrona para leer el contenido del segundo fichero './fichero2.txt'
 fs.readFile('./fichero2.txt', 'utf-8', (err, text) => {
-    // Callback: una función que se ejecuta después de que se completa una tarea asíncrona
-    // 'err' es el posible error que ocurrió durante la operación
-    // 'text' es el contenido del fichero leído, en formato UTF-8
-    if (err) {
-        console.error('Error al leer el segundo fichero:', err);
-        return;
-    }
-    console.log('Segundo texto:', text);
-});
+  // Callback: una función que se ejecuta después de que se completa una tarea asíncrona
+  // 'err' es el posible error que ocurrió durante la operación
+  // 'text' es el contenido del fichero leído, en formato UTF-8
+  if (err) {
+    console.error('Error al leer el segundo fichero:', err)
+    return
+  }
+  console.log('Segundo texto:', text)
+})
 
 /*
 Lo bueno de esto es que no sabes qué tarea terminará primero.

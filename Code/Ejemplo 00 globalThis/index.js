@@ -1,17 +1,17 @@
 // Autor: Daniel Benjamin Perez Morales
 // GitHub: https://github.com/DanielPerezMoralesDev13
-// Correo electrónico: danielperezdev@proton.me 
+// Correo electrónico: danielperezdev@proton.me
 
 // Ejemplo básico de uso de `console` en Node.js
 
 // Imprime un saludo en la consola
-console.log("Saludo")
+console.log('Saludo')
 
 // Imprime un mensaje informativo en la consola
-console.info("Mensaje")
+console.info('Mensaje')
 
 // Imprime un mensaje de error en la consola
-console.error("Mensaje Error")
+console.error('Mensaje Error')
 
 // Intento de acceder al objeto `window`, que no está definido en Node.js
 // Esto causará un error porque `window` es específico de los navegadores web
@@ -27,7 +27,7 @@ Esto sucede porque `window` es un objeto global en el entorno del navegador, per
 
 // Para demostrar que `window` no está definido en Node.js, imprimimos su tipo
 // Debería ser 'undefined'
-console.log(typeof window)  // 'undefined'
+console.log(typeof window) // 'undefined'
 
 // `globalThis` es una variable global que se refiere al contexto global en cualquier entorno
 

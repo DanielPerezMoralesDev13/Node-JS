@@ -14,14 +14,14 @@ const fs = require('node:fs/promises')
 
 console.log('Leyendo el primer fichero...')
 fs.readFile('./fichero.txt', 'utf-8')
-    .then(text => {
-        console.log('primer texto:', text)
-    })
+  .then(text => {
+    console.log('primer texto:', text)
+  })
 
 console.log('--> Hacer cosas mientras lee el fichero...')
 
 console.log('Leyendo el segundo fichero...')
 fs.readFile('./fichero2.txt', 'utf-8')
-    .then(text => {
-        console.log('segundo texto:', text)
-    })
+  .then(text => {
+    console.log('segundo texto:', text)
+  })
