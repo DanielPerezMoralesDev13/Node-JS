@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
 <!-- GitHub: https://github.com/DanielPerezMoralesDev13 -->
-<!-- Correo electrónico: danielperezdev@proton.me  -->
+<!-- Correo electrónico: danielperezdev@proton.me -->
 # ***Curso de Node.js Desde Cero: Introducción y Primeros Pasos***
 
 - *¡Bienvenido al **Curso de Node.js Desde Cero**! Este repositorio contiene el código fuente y los recursos para aprender Node.js desde el principio. El curso cubre conceptos fundamentales, proporciona ejemplos prácticos y te guía en la creación de tus primeras aplicaciones con Node.js.*

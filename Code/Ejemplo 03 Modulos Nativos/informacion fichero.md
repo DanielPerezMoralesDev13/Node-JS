@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
 <!-- GitHub: https://github.com/DanielPerezMoralesDev13 -->
-<!-- Correo electrónico: danielperezdev@proton.me  -->
+<!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ****`Fichero.mjs` utiliza ECMAScript Modules (ESM) para importar el módulo `os` en Node.***js y luego imprime información del sistema operativo.*
 

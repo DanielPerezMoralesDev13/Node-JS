@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
 <!-- GitHub: https://github.com/DanielPerezMoralesDev13 -->
-<!-- Correo electrónico: danielperezdev@proton.me  -->
+<!-- Correo electrónico: danielperezdev@proton.me -->
 # ***Node.js Course From Scratch: Introduction and First Steps***
 
 - *Welcome to the **Node.js Course From Scratch**! This repository contains the source code and resources for learning Node.js from the ground up. The course covers fundamental concepts, provides practical examples, and guides you through creating your first Node.js applications.*
